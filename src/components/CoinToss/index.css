@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: linear-gradient(to right, #f9d423, #e2a139);
+  height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coin-toss-container {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.title {
+  color: #a35200;
+  font-family: 'Roboto';
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.game-text {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+.image-size {
+  height: 160px;
+  width: 160px;
+}
+
+.button {
+  background-color: #e2a139;
+  color: #a35200;
+  border: none;
+  font-size: 12px;
+  font-family: 'Roboto';
+  padding: 7px;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.display {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 16px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .background {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .coin-toss-container {
+    width: 70%;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .game-text {
+    font-size: 20px;
+  }
+  .image-size {
+    height: 150px;
+    width: 150px;
+  }
+  .button {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    margin: 10px;
+  }
+  .counts-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+  }
+  .display {
+    font-size: 20px;
+  }
+}
